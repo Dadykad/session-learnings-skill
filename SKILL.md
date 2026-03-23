@@ -1,5 +1,6 @@
 ---
 name: session-learnings
+version: 1.1
 description: Use at end of development session, after completing significant work, debugging, or encountering obstacles - extracts learnings and proposes skill improvements
 ---
 
@@ -122,6 +123,13 @@ For each filtered learning, identify:
    - **CLAUDE.md (project or global):** Missing guideline that would have prevented the issue, outdated instruction that caused confusion, rule that should be added/clarified
    - **Permissions (`settings.json`):** Tool permission that was repeatedly prompted for and should be pre-allowed, overly broad permission that should be tightened, missing permission that blocked a common workflow
    - Ask: "If this had been in CLAUDE.md or permissions before the session, would it have saved time or prevented mistakes?"
+
+5. **Or does `docs/TECH-STACK.md` need updating?**
+   - New dependency added/removed during the session
+   - Version bumped or migrated
+   - New external service integrated
+   - Drift between actual usage and what TECH-STACK.md documents
+   - Ask: "Did this session change or reveal anything about our tech stack that isn't reflected in `docs/TECH-STACK.md`?"
 
 ## Phase 4: Generate Proposals
 
@@ -258,6 +266,14 @@ When presenting learnings:
 **Proposed:** [Specific permission change]
 **Why:** [Friction it removes or risk it addresses]
 
+### Tech Stack Updates (`docs/TECH-STACK.md`)
+
+#### [Title] (if any)
+**Change:** [Add dependency / Update version / Remove entry / Add service]
+**Current:** [What TECH-STACK.md says now, if anything]
+**Actual:** [What the codebase actually uses]
+**Why:** [What happened in the session that revealed the drift]
+
 ---
 
 **Awaiting your approval before making any changes.**
@@ -281,6 +297,7 @@ Which proposals would you like me to implement?
 - `writing-skills` - For actually implementing approved skill changes
 - `CLAUDE.md` (project/global) - May receive new guidelines, rule clarifications, or outdated instruction updates
 - `settings.json` / `settings.local.json` - May receive permission additions, scope changes, or hook improvements
+- `docs/TECH-STACK.md` - May receive dependency additions, version updates, or new service entries
 
 ## Why Failures Matter Most
 
@@ -295,3 +312,11 @@ Success stories tell you one path that worked. Failure stories tell you which pa
 - Misleading error messages
 - Rationalizations that led astray
 - Dead-ends that wasted time
+
+## Changelog
+
+| Date | Change | Source |
+|------|--------|--------|
+| 2026-03-23 | Added `docs/TECH-STACK.md` drift detection to Phase 3 mapping and output format | user request: keep tech stack docs current |
+| 2026-03-23 | Added CLAUDE.md and permissions improvement proposals | session: bot integration debugging |
+| 2026-03-23 | Initial release | — |

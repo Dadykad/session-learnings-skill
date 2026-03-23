@@ -29,10 +29,17 @@ Or naturally: *"what did we learn from this session?"*
 
 1. **Extract** — Reviews the session for learning candidates (bug patterns, testing gaps, process friction, discoveries)
 2. **Filter** — Keeps only learnings that are non-obvious, reusable, and verified
-3. **Map** — Matches learnings to existing skills that could benefit
+3. **Map** — Matches learnings to existing skills, CLAUDE.md guidelines, or permissions that could benefit
 4. **Propose** — Generates specific improvement suggestions with evidence
 5. **Consult** — Presents proposals for human approval (no changes without your OK)
 6. **Implement** — Applies approved changes with changelog entries and version tracking
+
+## Beyond Skills
+
+In addition to skill improvements, this skill also proposes:
+
+- **CLAUDE.md improvements** — Missing guidelines, outdated instructions, or rules that would have prevented session issues
+- **Permission improvements** — Tool permissions that should be pre-allowed, tightened, or added to reduce friction
 
 ## Changelog Tracking
 

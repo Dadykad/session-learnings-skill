@@ -118,6 +118,11 @@ For each filtered learning, identify:
    - Doesn't fit in existing skills
    - Worth the context cost of a new skill
 
+4. **Or is this a CLAUDE.md / permissions improvement?**
+   - **CLAUDE.md (project or global):** Missing guideline that would have prevented the issue, outdated instruction that caused confusion, rule that should be added/clarified
+   - **Permissions (`settings.json`):** Tool permission that was repeatedly prompted for and should be pre-allowed, overly broad permission that should be tightened, missing permission that blocked a common workflow
+   - Ask: "If this had been in CLAUDE.md or permissions before the session, would it have saved time or prevented mistakes?"
+
 ## Phase 4: Generate Proposals
 
 For each proposed change, document:
@@ -236,6 +241,23 @@ When presenting learnings:
 **Scope:** [What this skill would cover]
 **Evidence:** [Why it's needed based on session]
 
+### CLAUDE.md Improvements
+
+#### [Title] (if any)
+**File:** [Project CLAUDE.md / Global CLAUDE.md]
+**Change:** [Add rule / Update section / Clarify instruction]
+**Proposed text:** [Specific text to add or modify]
+**Why:** [What went wrong or was unclear without this]
+
+### Permission Improvements
+
+#### [Title] (if any)
+**File:** [settings.json / settings.local.json]
+**Change:** [Add allow rule / Tighten scope / Remove unnecessary permission]
+**Current:** [What exists now, if anything]
+**Proposed:** [Specific permission change]
+**Why:** [Friction it removes or risk it addresses]
+
 ---
 
 **Awaiting your approval before making any changes.**
@@ -257,6 +279,8 @@ Which proposals would you like me to implement?
 - `superpowers-tdd` - Often receives test pattern improvements
 - `superpowers-verify` - May receive verification checklist additions
 - `writing-skills` - For actually implementing approved skill changes
+- `CLAUDE.md` (project/global) - May receive new guidelines, rule clarifications, or outdated instruction updates
+- `settings.json` / `settings.local.json` - May receive permission additions, scope changes, or hook improvements
 
 ## Why Failures Matter Most
 
